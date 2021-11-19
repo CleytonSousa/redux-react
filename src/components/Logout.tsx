@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { logout } from "../redux/userSlice";
+import { LogoutConatiner } from "../style";
 
 const Logout = () => {
 
@@ -11,9 +12,9 @@ const Logout = () => {
     }
 
     return(
-        <div>
+        <LogoutConatiner>
             <button onClick={handleLogout}>Logout</button>
-        </div>
+        </LogoutConatiner>
     )
 }
 
